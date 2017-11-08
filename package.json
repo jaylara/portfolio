@@ -1,0 +1,32 @@
+{
+  "name": "protfolio",
+  "version": "1.0.0",
+  "description": "A place for me to show my journey through CodeLand",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaylara/portfolio.git"
+  },
+  "keywords": [
+    "jaylara",
+    "portfolio",
+    "web"
+  ],
+  "author": "Jay Lara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaylara/portfolio/issues"
+  },
+  "homepage": "https://github.com/jaylara/portfolio#readme"
+}
