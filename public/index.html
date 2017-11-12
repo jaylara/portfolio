@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="./css/common.css">
-  <title>Portfolio</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/img/signature.png">
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" ></script>
+    <script charset="utf-8" src="./js/common.js" ></script>
+    <title>The Web Portfolio of Jay Lara</title>
 </head>
 <body>
-  <div id="wrapper">
-    <header>
-      <div class="title">
-        <h1 class="font-Orbitron"><b>jay</b>lara</h1>
-        <h2 class="font-Orbitron">full stack dev</h2>
-      </div>
-      <nav>
-        <p><a href="#">Projects</a></p>
-        <p><a href="#">About</a></p>
-        <p><a href="#">Contact</a></p>
-      </nav>
-    </header>
-    <div class="colorbar"></div>
-    <main>
-      <div>#1</div><div>#1</div><div>#1</div>
-      <div>#1</div><div>#1</div><div>#1</div>
-      <div>#1</div><div>#1</div><div>#1</div>
-    </main>
+    <div id="wrapper">
+        <header>
+            <div class="title">
+                <h1><b>jay</b>lara</h1>
+                <h2>full stack dev</h2>
+            </div>
+            <nav>
+                <!--
+                <p><a href="#">projects</a></p>
+                <p><a href="#">about</a></p>
+                <p><a href="#">contact</a></p>
+                 -->
+                 <!-- alt="Resume Icon by Gregor Cresnar from the Noun Project" -->
+                <a href="/other/jay_lara_cv_resume.pdf" title="View My Resume" class="button info-tile-blue">
+                    My Resume
+                </a>
 
-    <div class="colorbar"></div>
+                <a href="http://www.github.com/jaylara" title="Check out my code">
+                    <img src="/img/icons/github-logo.png" alt="Check out my code" height="66px" />
+                </a>
 
-    <footer>
-      <img class="signature" src="./img/signature.png" alt="signature" />
-      <p>Created with <span class="heart moveY20Ease5s">♥</span> at <b>GA</b>. <span class="heart">&#9400;</span> 2017 Jay Lara</p>
-    </footer>
-  </div>
+                <a href="http://www.linkedin.com/in/jaylara1" title="Connect with me">
+                    <img src="/img/icons/linkedin-logo.png" alt="Connect with me" height="66px" />
+                </a>
+            </nav>
+        </header>
+        <div class="colorbar"></div>
+        <main>
+            <h1>Greetings! I'm Jay Lara, a Full Stack Dev in Austin, TX.</h2>
+                <section>
+                    <aside class="blurbs"></aside>
+                    <article class="projects info-tiles"></article>
+                </section>
+            </main>
 
-</body>
-</html>
+            <div class="colorbar"></div>
+
+            <footer>
+                <img class="signature" src="./img/signature.png" alt="signature" />
+                <div class="logos">
+                    <div class="logo linkedin"></div>
+                    <div class="logo github"></div>
+                </div>
+                <p>
+                    Created with <span class="heart moveY20Ease5s">♥</span> at <b>GA</b>.
+                    <span class="heart">&#9400;</span> 2017 Jay Lara
+                </p>
+            </footer>
+        </div>
+
+    </body>
+    </html>

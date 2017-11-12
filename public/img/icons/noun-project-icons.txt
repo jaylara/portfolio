@@ -1,0 +1,2 @@
+tictactoe: Tic Tac Toe by Lloyd Humphreys from the Noun Project
+earthquake: Earthquake by Hea Poh Lin from the Noun Project
