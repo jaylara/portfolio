@@ -1,2 +1,3 @@
 tictactoe: Tic Tac Toe by Lloyd Humphreys from the Noun Project
 earthquake: Earthquake by Hea Poh Lin from the Noun Project
+resume: Resume by Gregor Cresnar from the Noun Project
