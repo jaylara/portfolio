@@ -23,6 +23,7 @@ const initializeProjects = (resp) => {
 } // end of initializeProjects()
 
 $(() => {
-	(new AjaxRequest(`/api/blurbs`, initializeBlurbs)).execute();
-	(new AjaxRequest(`/api/projects`, initializeProjects)).execute();
+    var jaydataUrl = "https://jaydata.herokuapp.com/portfolio";
+	(new AjaxRequest(`${jaydataUrl}/blurbs`, initializeBlurbs)).execute();
+	(new AjaxRequest(`${jaydataUrl}/projects`, initializeProjects)).execute();
 });
