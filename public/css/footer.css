@@ -1,0 +1,36 @@
+#wrapper>footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#wrapper>footer aside {
+    display: flex;
+    align-items: center;
+}
+
+#wrapper>footer article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#wrapper>footer article .links {
+    font-size: 20px;
+}
+
+#wrapper>footer article .links a {
+    color: rgba(52,56,56,.55);
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+#wrapper>footer article .links a:hover {
+    animation: rainbowcolorchange infinite 10s;
+}
+
+#wrapper>footer .signature {
+    height: 100px;
+}

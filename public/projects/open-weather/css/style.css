@@ -1,0 +1,108 @@
+/* Custom CSS goes here */
+
+#open-weather{
+    margin: 0;
+    top: 0;
+}
+
+#open-weather h1,#open-weather h2,#open-weather h3 {
+    display: inline;
+}
+
+#open-weather header {
+    border-bottom: 3px solid black;
+    /*background-image: url("../images/header.png");*/
+
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+    padding: 10px;
+    box-shadow: 3px 3px 5px gray;
+
+
+}
+
+#open-weather header .title {
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px gray;
+    margin: 0;
+    padding:0;
+
+}
+
+#open-weather header .weather-form {
+    font-size: 16px;
+    margin-right: 7px;
+    font-weight: bold;
+}
+
+#open-weather section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#open-weather article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 550px;
+}
+
+#open-weather .country-info {
+    height: 80px;
+}
+
+#open-weather article h2 {
+    font-size: 65px;
+    flex: 0;
+}
+
+#open-weather article .weather-flag {
+    margin-right: 10px;
+    flex:0;
+
+}
+
+
+#open-weather article .country-flag, #open-weather article .weather-flag {
+    margin-right: 10px;
+    flex:0;
+
+}
+
+#open-weather article .info-box {
+    flex-wrap: wrap;
+
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px gray;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: gray;
+
+}
+
+
+
+#open-weather article .info-box p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 30px;
+
+}
+
+#open-weather article .info-box span {
+    font-weight: bold;
+    font-size: 20px;
+
+}

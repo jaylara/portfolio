@@ -1,0 +1,53 @@
+
+<div id="tic-tac-toe" class="inline-project">
+    <script>
+        var element = document.createElement("link");
+        element.setAttribute("rel", "stylesheet");
+        element.setAttribute("type", "text/css");
+        element.setAttribute("href", "/projects/tic-tac-toe/css/style.css");
+        document.getElementsByTagName("head")[0].appendChild(element);
+    </script>
+    <script src="/projects/tic-tac-toe/js/app.js"></script>
+    <header>
+        <div class="title">Tic Tac Toe</div>
+        <div class="score-box box-playerX">
+            <p>Player X</p>
+            <span id="wins-X">0</span>
+        </div>
+        <div class="score-box box-playerO">
+            <p>Player O</p>
+            <span id="wins-O">0</span>
+        </div>
+        <div class="score-box box-win">
+            <p>Ties</p>
+            <span id="ties">0</span>
+        </div>
+        <div class="score-box box-button" onclick="ResetBoard();">
+            <span>RESET</span>
+        </div>
+    </header>
+    <div class="container">
+
+        <article id="board">
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </article>
+
+        <aside>
+            <section><textarea id="game-log" ></textarea></section>
+        </aside>
+    </div>
+</div>

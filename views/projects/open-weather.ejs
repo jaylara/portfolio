@@ -1,0 +1,73 @@
+<div id="open-weather" class="inline-project">
+    <script>
+    var element = document.createElement("link");
+    element.setAttribute("rel", "stylesheet");
+    element.setAttribute("type", "text/css");
+    element.setAttribute("href", "/projects/open-weather/css/style.css");
+    document.getElementsByTagName("head")[0].appendChild(element);
+    </script>
+    <script src="/projects/open-weather/js/main.js"></script>
+    <header>
+        <h1 class="title">Weather</h1>
+        <form class="weather-form">
+            <input type="text" class="weather-city" name="q" value="Austin" placeholder="Enter a city.."/>
+            <input type="hidden" name="appid" value="aa3989364fc6d6e927b44975f37600a9">
+            <!-- james: 3501f282f2cd6fc99583263cfdc07353 -->
+            <!-- mine: aa3989364fc6d6e927b44975f37600a9 -->
+            <input type="hidden" name="units" value="imperial">
+
+            <input type="submit" value="Get Weather">
+
+        </form>
+    </header>
+    <section>
+        <!-- <p class="city-error" style="display :none;">Whoops! Looks like that city doesn't exist, try another one.</p> -->
+        <article class="weather-info">
+            <img class="weather-icon" width=70 /> <h2 class="description"></h2>
+        </article>
+        <article>
+            <div class="info-box">
+                <p>Coordinates</p>
+                <span class="coordinates">
+                    <span class="coor-lon"></span> -
+                    <span class="coor-lat"></span>
+                </span>
+            </div>
+
+            <div class="info-box">
+                <p>Temperature</p>
+                <span class="temp-min"></span> &gt;
+                <span class="temperature"></span> &gt;
+                <span class="temp-max"></span>
+            </div>
+
+            <div class="info-box">
+                <p>Humidity</p>
+                <span class="humidity"></span>
+            </div>
+            <div class="info-box">
+                <p>Pressure</p>
+                <span class="pressure"></span>
+            </div>
+            <div class="info-box">
+                <p>Wind</p>
+                <span class="wind">
+                    <span class="wind-speed"></span> /
+                    <span class="wind-deg"></span>
+                </span>
+            </div>
+
+            <div class="info-box">
+                <p>Clouds</p>
+                <span class="clouds"></span>
+            </div>
+
+        </article>
+        <article class="country-info">
+            <img class="country-flag" width=50 /> <h2 class="city-name"></h2>
+        </article>
+
+
+
+    </section>
+</div>

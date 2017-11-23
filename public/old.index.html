@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="%PUBLIC_URL%/img/signature.png">
-    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" ></script>
-    <script charset="utf-8" src="./js/common.js" ></script>
+    <script charset="utf-8" src="/js/common.js" ></script>
     <title>The Web Portfolio of Jay Lara</title>
 </head>
 <body>
@@ -16,12 +16,6 @@
                 <h2>full stack dev</h2>
             </div>
             <nav>
-                <!--
-                <p><a href="#">projects</a></p>
-                <p><a href="#">about</a></p>
-                <p><a href="#">contact</a></p>
-                 -->
-                 <!-- alt="Resume Icon by Gregor Cresnar from the Noun Project" -->
                 <a href="/other/jay_lara_cv_resume.pdf" title="View My Resume" class="button info-tile-blue">
                     My Resume
                 </a>
@@ -38,9 +32,14 @@
         <div class="colorbar"></div>
         <main>
             <h1>Greetings! I'm Jay, a Full Stack Dev in Austin, TX.</h2>
+
                 <section>
-                    <aside class="blurbs"></aside>
-                    <article class="projects info-tiles"></article>
+                    <aside id="blurbs">
+                    </aside>
+                    <script>handleBlurbsLoad();</script>
+                    <article id="projects" class="info-tiles">
+                    </article>
+                    <script>handleProjectsLoad();</script>
                 </section>
             </main>
 

@@ -4,6 +4,7 @@
   "description": "A place for me to show my journey through CodeLand",
   "main": "server.js",
   "dependencies": {
+    "axios": "^0.17.1",
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "ejs": "^2.5.7",

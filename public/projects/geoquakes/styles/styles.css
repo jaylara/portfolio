@@ -1,0 +1,17 @@
+#geoquakes .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#geoquakes #map {
+  height: 600px;
+  width: 500px;
+  margin-right: 20px;
+}
+
+#geoquakes .info {
+    height: 600px;
+    width: 500px;
+    overflow-y: scroll;
+}

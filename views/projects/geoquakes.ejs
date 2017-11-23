@@ -1,0 +1,17 @@
+
+<div id="geoquakes" class="inline-project">
+    <script>
+        var element = document.createElement("link");
+        element.setAttribute("rel", "stylesheet");
+        element.setAttribute("type", "text/css");
+        element.setAttribute("href", "/projects/geoquakes/styles/styles.css");
+        document.getElementsByTagName("head")[0].appendChild(element);
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
+    <script src="/projects/geoquakes/scripts/app.js"></script>
+    <h1>Earthquakes from the past week:</h1>
+    <div class="container">
+        <div id="map"></div>
+        <div class="info"></div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+
+#wrapper>header {
+    /*border: 1px solid white;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    color: rgba(52,56,56,.55);
+    font-family: 'Orbitron';
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+#wrapper>header .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+#wrapper>header .title h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 110px;
+    font-weight: normal;
+    padding: 20px 0 0 0;
+    animation: colorchange infinite 30s;
+}
+
+#wrapper>header .title h2 {
+    padding: 0;
+    margin-top: -20px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+
+#wrapper>header nav {
+    display: flex;
+    align-items: center;
+}
+
+#wrapper>header nav p{
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper>header nav>a {
+    margin: 0 10px;
+}
+
+#wrapper>header nav p a {
+    font-size: 30px;
+    color: rgba(52,56,56,.55);
+    padding: 5px;
+    text-decoration: none;
+}
+
+#wrapper>header nav p a:hover {
+    animation: backgroundcolorchange infinite 10s;
+    color: rgba(52,56,56,.55);
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/head.ejs %>
+    <link rel="stylesheet" type="text/css" href="/css/projects.css" />
+    <title>Jay's Portfolio: Projects<%= name ?  ": "+name : ""%></title>
+</head>
+<body>
+    <div id="wrapper">
+        <% include partials/header.ejs %>
+        <div class="colorbar"></div>
+
+        <main>
+
+        <% if (typeof pid === 'undefined') {%>
+            <nav class="breadcrumbs"><a href="/">Portfolio</a>:
+                Projects
+            </nav>
+            <section>
+                <article id="projects" class="info-tiles">
+                </article>
+
+                <script>handleProjectsLoad();</script>
+            </section>
+        <% } else { %>
+            <nav class="breadcrumbs"><a href="/">Portfolio</a>:
+                <a href="/projects">Projects</a>:
+                <%= name %>
+            </nav>
+            <section>
+
+                <article id="project" >
+                <% if (!isActive) {%>
+                    <h1 class="not-active">This project is not active</h1>
+                <% } %>
+                    <div class="details">
+                        <div class="left">
+                            <!-- src="<%=image %>"  -->
+                            <div class="image" style="background-image: url('/img/projects/<%= dirName %>.PNG')">
+
+                                <div class="image-text <%=theme %>">
+                                    <%- status %>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <h1><%- name %>
+                            <% if (appLink === '') {%>
+
+                            <% } else if (appLink !== '#') {%>
+                                <a href="<%= appLink %>" title="<%= name %>" class="emoji-link">🔗</a>
+                            <% } else { %>
+                                <a href="/projects?pid=<%= pid %>#app-inline" title="<%= name %>" class="emoji-link">🔗</a>
+                            <% } %>
+                            <% if (gitHubLink !== '#') {%>
+                                <a href="<%= gitHubLink %>" title="<%= name %> on GitHub" class="icon-link">
+                                    <img src="/img/icons/github-logo.png" alt="Check out my code" height="33px" />
+                                </a>
+                            <% } %>
+                            </h1>
+                            <i><b>Uses:</b> <%= stackTags %></i>
+                            <p class="description"><%- description %> <%= icon %> <i><%= publishDate %></i> </p>
+
+                        </div>
+                    </div>
+                <% if (appLink === '#') {%>
+                    <a name="app-inline"></a>
+                    <div class="details">
+                        <h2>Application Inline: </h2>
+                    </div>
+                    <%- include(directory) %>
+                <% } %>
+                </article>
+            </section>
+        <% } %>
+        </main>
+
+        <div class="colorbar"></div>
+        <% include partials/footer.ejs %>
+    </div>
+
+</body>
+</html>
